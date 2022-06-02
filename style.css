@@ -1,0 +1,55 @@
+/* @import url('https://fonts.googleapis.com/css?family=muli&display=swap'); */
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    height: 100vh;
+    margin-top: 164px;
+}
+
+.panel {
+    flex:1;
+    position: relative;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: flex 0.4s ease-in;
+    cursor: pointer;
+
+}
+
+.panel h3 {
+    color:#fff;
+    position: absolute;
+    bottom: 3px;
+  left: 20px;
+  margin: 0;
+    /* opacity: 0; */
+}
+
+
+.panel.active {
+    flex:15;
+
+}
+
+
+
